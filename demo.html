@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Obvious Buttons Demo</title>
+  <link rel="stylesheet" href="obvious-buttons.css"/>
+  <style>
+html {
+  background-color: #232729;
+  color: #d1d2d0;
+}
+.demo {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.demo > div + div {
+  margin-top: 5px;
+}
+.product-card {
+  background: #444;
+  border-radius: 15px;
+  display: flex;
+  font-size: 1em;
+  line-height: 2;
+  overflow: hidden;
+}
+button {
+  font-family: inherit;
+}
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="demo/orange-slices.jpg" width="200" height="300"/>
+    <div style="flex: 1 0; margin: 1em;">
+      <div style="display: flex; flex-wrap: wrap; font-size: 1.3em;">
+        <div style="flex: auto; font-weight: bold;">Orange Slices</div>
+        <div>$7&hairsp;&ndash;&hairsp;$13</div>
+      </div>
+      <div>In stock</div>
+      <div>SLICE THICKNESS</div>
+      <div class="ob-row ob-yellow">
+        <div class="ob-label">
+          <svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512">
+            <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+            <path d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"/>
+          </svg>
+        </div>
+        <button class="ob-button">5mm</button>
+        <button class="ob-button">9mm</button>
+        <button class="ob-button">13mm</button>
+      </div>
+      <div style="display: flex; margin: 1em 0;">
+        <button class="ob-button ob-blue">Buy now</button>
+        <button class="ob-button ob-gray">Add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="ob-row ob-red">
+      <div class="ob-label">
+        <svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/>
+        </svg>
+      </div>
+      <button class="ob-button">
+        <svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/>
+        </svg>
+      </button>
+      <button class="ob-button">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button active" disabled>5</button>
+    </div>
+    <div class="ob-row ob-orange">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button active">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-yellow">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button active">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-green">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button active">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-cyan">
+      <div class="ob-label">??</div>
+      <button class="ob-button active">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-blue">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button active">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-indigo">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button active">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-purple">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button active">4</button>
+      <button class="ob-button" disabled>5</button>
+    </div>
+    <div class="ob-row ob-gray">
+      <div class="ob-label">??</div>
+      <button class="ob-button">1</button>
+      <button class="ob-button">2</button>
+      <button class="ob-button">3</button>
+      <button class="ob-button">4</button>
+      <button class="ob-button active" disabled>5</button>
+    </div>
+  </div>
+</body>
+</html>

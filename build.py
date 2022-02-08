@@ -19,45 +19,46 @@ class Color:
             LCHabColor(self.l, self.c, self.h), sRGBColor
         ).get_rgb_hex()
 
-    def set(
-        self, l: int | None = None, c: int | None = None, h: int | None = None
-    ) -> Color:
+    def set(self, l: float | None = None, c: float | None = None) -> Color:
         return type(self)(
-            l=self.l if l is None else l,
-            c=self.c if c is None else c,
-            h=self.h if h is None else h,
+            l=self.l if l is None else max(l, 0),
+            c=self.c if c is None else max(c, 0),
+            h=self.h,
         )
 
-    def adjust(self, l: int = 0, c: int = 0, h: int = 0) -> Color:
-        return type(self)(self.l + l, self.c + c, self.h + h)
+    def adjust(self, l: float = 0, c: float = 0) -> Color:
+        return self.set(l=self.l + l, c=self.c + c)
 
 
 base_colors = dict(
-    red=Color(45, 35, 0),
-    orange=Color(45, 35, 45),
-    yellow=Color(45, 35, 90),
-    green=Color(45, 35, 135),
-    cyan=Color(45, 35, 180),
-    blue=Color(45, 35, 225),
-    indigo=Color(45, 35, 270),
-    purple=Color(45, 35, 315),
-    gray=Color(45, 0, 0),
+    red=Color(35, 35, 0),
+    orange=Color(35, 35, 45),
+    yellow=Color(35, 35, 90),
+    green=Color(35, 35, 135),
+    cyan=Color(35, 35, 180),
+    blue=Color(35, 35, 225),
+    indigo=Color(35, 35, 270),
+    purple=Color(35, 35, 315),
+    gray=Color(35, 0, 0),
 )
 color_classes = []
 for name, color in base_colors.items():
     css = dedent(
         f"""\
           .ob-{name} {{
-            --ob-background-normal: linear-gradient(to bottom, {color} 30%, {color.adjust(l=-3.6)} 100%);
-            --ob-background-hover: linear-gradient(to bottom, {color.adjust(l=3.6)} 20%, {color} 100%);
-            --ob-background-active: linear-gradient(to bottom, {color.adjust(l=-5.4)} 20%, {color.adjust(l=-2.7)} 100%);
-            --ob-background-disabled: {color.adjust(c=-18)};
+            --ob-background: linear-gradient(to bottom, {color} 40%, {color.adjust(l=-6)} 100%);
+            --ob-background-hover: linear-gradient(to bottom, {color.adjust(l=6)} 20%, {color} 100%);
+            --ob-background-active: linear-gradient(to bottom, {color.adjust(l=-12)} 20%, {color.adjust(l=-8)} 100%);
+            --ob-background-disabled: {color.adjust(l=-10, c=-10)};
             --ob-border-color: black;
             --ob-border-radius: 10px;
-            --ob-border-highlight-color: {color.adjust(l=5.4)};
-            --ob-text-shadow-color: {color.adjust(l=-10)};
-            --ob-background-label: {color.set(c=0)};
-            --ob-color-label: {color.adjust(l=-10).set(c=0)};
+            --ob-box-shadow-color: {color.adjust(l=5, c=-5)};
+            --ob-box-shadow-color-active: {color.adjust(c=5)};
+            --ob-color: {color.adjust(l=50, c=-35)};
+            --ob-color-disabled: {color.adjust(l=10, c=-35)};
+            --ob-text-shadow-color: {color.adjust(l=-30)};
+            --ob-background-label: {color.adjust(l=-5, c=-10)};
+            --ob-color-label: {color.adjust(l=-30)};
           }}
         """
     )
@@ -65,33 +66,54 @@ for name, color in base_colors.items():
 
 stylesheet = """
 .ob-button {
-  background: var(--ob-background-normal);
+  background: var(--ob-background);
   border-radius: var(--ob-border-radius);
   border: solid 1px var(--ob-border-color);
-  box-shadow: inset 0 1px 0 0 var(--ob-border-highlight-color);
-  color: inherit;
-  font-size: 1.5em;
+  box-shadow: inset 0 1px 0 0 var(--ob-box-shadow-color);
+  color: var(--ob-color);
+  font-family: inherit;
+  font-size: 100%;
   line-height: 1.8;
+  margin: 0;
+  overflow: visible;
   padding: 0 0.4em;
   text-shadow: 1px 1px 0px var(--ob-text-shadow-color);
+  text-transform: none;
   touch-action: manipulation;
 }
-.ob-button.ob-label {
+.ob-label {
   background: var(--ob-background-label);
+  border-radius: var(--ob-border-radius);
+  border: solid 1px var(--ob-border-color);
+  box-sizing: border-box;
   color: var(--ob-color-label);
+  cursor: default;
+  font-size: 100%;
+  line-height: 1.8;
+  padding: 0 0.4em;
+}
+.ob-label > *, .ob-button > * {
+  vertical-align: middle;
 }
 .ob-button:hover {
   background: var(--ob-background-hover);
 }
 .ob-button:active, .ob-button.active {
   background: var(--ob-background-active);
+  box-shadow: inset 0 0 0 1px var(--ob-box-shadow-color-active);
 }
 .ob-button:disabled {
-  background: var(--ob-background-disabled);
+  background: var(--ob-background-label);
   box-shadow: none;
-  color: gray;
+  color: var(--ob-color-disabled);
 }
-.ob-button > svg {
+.ob-button svg path {
+  fill: var(--ob-color);
+}
+.ob-label svg path {
+  fill: var(--ob-color-label);
+}
+.ob-button svg {
   filter: drop-shadow(1px 1px 0 var(--ob-text-shadow-color));
 }
 
