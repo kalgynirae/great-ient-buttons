@@ -2,4 +2,4 @@
 
 Dark theme button styles for gradient-nostalgic folks.
 
-Demo: (link coming soon)
+Demo and instructions: https://kalgynirae.github.io/great-ient-buttons/
