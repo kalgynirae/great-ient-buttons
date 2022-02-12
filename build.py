@@ -59,27 +59,44 @@ for name, color in base_colors.items():
             --ob-text-shadow-color: {color.adjust(l=-30)};
             --ob-background-label: {color.adjust(l=-5, c=-10)};
             --ob-color-label: {color.adjust(l=-30)};
+            --ob-header-color: {color.adjust(l=40, c=-10)};
+            --ob-link-color: {color.adjust(l=15)};
+            --ob-link-color-hover: {color.adjust(l=20, c=5)};
           }}
         """
     )
     color_classes.append(css)
 
 stylesheet = """
+/* Selected resets from normalize.css (https://necolas.github.io/normalize.css/) */
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+}
+
 .ob-button {
   background: var(--ob-background);
   border-radius: var(--ob-border-radius);
   border: solid 1px var(--ob-border-color);
   box-shadow: inset 0 1px 0 0 var(--ob-box-shadow-color);
   color: var(--ob-color);
-  font-family: inherit;
-  font-size: 100%;
   line-height: 1.8;
-  margin: 0;
-  overflow: visible;
-  padding: 0 0.4em;
+  padding: 0 0.5em;
   text-shadow: 1px 1px 0px var(--ob-text-shadow-color);
   text-transform: none;
   touch-action: manipulation;
+  white-space: nowrap;
+}
+a.ob-button {
+  text-decoration: none;
+}
+a.ob-button:hover {
+  color: var(--ob-color);
 }
 .ob-label {
   background: var(--ob-background-label);
@@ -88,9 +105,10 @@ stylesheet = """
   box-sizing: border-box;
   color: var(--ob-color-label);
   cursor: default;
-  font-size: 100%;
   line-height: 1.8;
-  padding: 0 0.4em;
+  text-align: center;
+  padding: 0 0.5em;
+  white-space: nowrap;
 }
 .ob-label > *, .ob-button > * {
   vertical-align: middle;
@@ -117,6 +135,10 @@ stylesheet = """
   filter: drop-shadow(1px 1px 0 var(--ob-text-shadow-color));
 }
 
+a.ob-button {
+  display: inline-block;
+}
+
 .ob-row {
   display: flex;
   align-items: center;
@@ -126,24 +148,47 @@ stylesheet = """
   font-size: 2em;
 }
 .ob-row > * {
-  flex: 1 0 0;
+  flex: initial;
 }
 .ob-row.ob-stretch > * {
   flex: 0 1 100%;
 }
 .ob-row > .ob-label {
-  flex: 0 1 0;
-}
-.ob-row > :not(:last-child) {
-  border-right-width: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.ob-row > :not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  flex: none;
 }
 
+@media (min-width: 600px) {
+  .ob-row > :not(:last-child) {
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .ob-row > :not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.ob-big {
+  line-height: 2.4;
+  padding: 0 1em;
+}
+
+@media (max-width: 599px) {
+  .ob-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .ob-row > :not(:last-child) {
+    border-bottom-width: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .ob-row > :not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
 """ + "\n".join(
     color_classes
 )
