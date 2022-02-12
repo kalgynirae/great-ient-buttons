@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>Obvious Buttons Demo</title>
-  <link rel="stylesheet" href="../obvious-buttons.css"/>
+  <link rel="stylesheet" href="../buttons.css"/>
   <style>
 @font-face {
   font-family: "Source Sans Pro";
@@ -28,10 +28,10 @@ body {
   padding: 1rem;
 }
 a {
-  color: var(--ob-link-color);
+  color: var(--gb-link-color);
 }
 a:hover, a:active {
-  color: var(--ob-link-color-hover);
+  color: var(--gb-link-color-hover);
 }
 h2 {
   margin: 2rem 0 1rem;
@@ -49,51 +49,51 @@ h2 {
 }
   </style>
 </head>
-<body class="ob-blue">
+<body class="gb-blue">
   <header style="text-align: center;">
     <h1><em>Great‼</em>-ient Buttons</h1>
     <p>Dark theme button styles for gradient-nostalgic folks. <a href="https://github.com/kalgynirae/obvious-buttons">GitHub</a></p>
   </header>
 
-  <div class="ob-row ob-stretch color-selector">
-    <div class="ob-label"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg></div>
-    <button id="red" class="ob-button ob-red">Red</button>
-    <button id="orange" class="ob-button ob-orange">Orange</button>
-    <button id="yellow" class="ob-button ob-yellow">Yellow</button>
-    <button id="green" class="ob-button ob-green">Green</button>
-    <button id="cyan" class="ob-button ob-cyan">Cyan</button>
-    <button id="blue" class="ob-button ob-blue active">Blue</button>
-    <button id="indigo" class="ob-button ob-indigo">Indigo</button>
-    <button id="purple" class="ob-button ob-purple">Purple</button>
-    <button id="gray" class="ob-button ob-gray">Gray</button>
+  <div class="gb-row gb-stretch color-selector">
+    <div class="gb-label"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg></div>
+    <button id="red" class="gb-button gb-red">Red</button>
+    <button id="orange" class="gb-button gb-orange">Orange</button>
+    <button id="yellow" class="gb-button gb-yellow">Yellow</button>
+    <button id="green" class="gb-button gb-green">Green</button>
+    <button id="cyan" class="gb-button gb-cyan">Cyan</button>
+    <button id="blue" class="gb-button gb-blue active">Blue</button>
+    <button id="indigo" class="gb-button gb-indigo">Indigo</button>
+    <button id="purple" class="gb-button gb-purple">Purple</button>
+    <button id="gray" class="gb-button gb-gray">Gray</button>
   </div>
 
   <h2>Individual Buttons</h2>
   <div>
-    <button class="ob-button">regular button</button>
-    <a class="ob-button" href="#">&lt;a&gt; button</a>
-    <button class="ob-button ob-big">big button</button>
+    <button class="gb-button">regular button</button>
+    <a class="gb-button" href="#">&lt;a&gt; button</a>
+    <button class="gb-button gb-big">big button</button>
   </div>
 
   <h2>Button Rows</h2>
   <div>
-    <div class="ob-row">
-      <div class="ob-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
-      <button class="ob-button"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
-      <button class="ob-button">2</button>
-      <button class="ob-button">3</button>
-      <button class="ob-button">Long text djkflafdjkls</button>
-      <button class="ob-button active" disabled>disabled</button>
-      <div class="ob-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
+    <div class="gb-row">
+      <div class="gb-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
+      <button class="gb-button"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
+      <button class="gb-button">2</button>
+      <button class="gb-button">3</button>
+      <button class="gb-button">Long text djkflafdjkls</button>
+      <button class="gb-button active" disabled>disabled</button>
+      <div class="gb-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
     </div>
-    <div class="ob-row ob-stretch" style="margin-top: 1em">
-      <div class="ob-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
-      <button class="ob-button"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
-      <button class="ob-button">2</button>
-      <button class="ob-button">3</button>
-      <button class="ob-button">Long text djkflafdjkls</button>
-      <button class="ob-button active" disabled>disabled</button>
-      <div class="ob-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
+    <div class="gb-row gb-stretch" style="margin-top: 1em">
+      <div class="gb-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
+      <button class="gb-button"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
+      <button class="gb-button">2</button>
+      <button class="gb-button">3</button>
+      <button class="gb-button">Long text djkflafdjkls</button>
+      <button class="gb-button active" disabled>disabled</button>
+      <div class="gb-label"><svg width=24 height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></div>
     </div>
   </div>
 
@@ -102,20 +102,20 @@ h2 {
     <img src="./concrete-staircase.jpg" width="240" height="300"/>
     <div style="flex: 1 0; margin: 1em;">
       <div style="display: flex; flex-wrap: wrap; font-size: 1.3em;">
-        <div style="color: var(--ob-header-color); flex: auto; font-weight: bold;">Concrete Staircase</div>
+        <div style="color: var(--gb-header-color); flex: auto; font-weight: bold;">Concrete Staircase</div>
         <div>$2900</div>
       </div>
       <div>In stock</div>
       <div style="margin-top: 0.5em;">STEP HEIGHT</div>
-      <div class="ob-row ob-gray">
-        <button class="ob-button">15cm</button>
-        <button class="ob-button active">19cm</button>
-        <button class="ob-button">23cm</button>
-        <button class="ob-button">27cm</button>
+      <div class="gb-row gb-gray">
+        <button class="gb-button">15cm</button>
+        <button class="gb-button active">19cm</button>
+        <button class="gb-button">23cm</button>
+        <button class="gb-button">27cm</button>
       </div>
       <div style="display: flex; margin-top: 1.5em; gap: 0.5em">
-        <button class="ob-button ob-big">Buy now</button>
-        <button class="ob-button ob-gray ob-big">Add to cart</button>
+        <button class="gb-button gb-big">Buy now</button>
+        <button class="gb-button gb-gray gb-big">Add to cart</button>
       </div>
     </div>
   </div>
@@ -137,7 +137,7 @@ h2 {
       for (const color of COLORS) {
         document.getElementById(color).classList.remove("active");
       }
-      document.body.className = `ob-${color}`;
+      document.body.className = `gb-${color}`;
       document.getElementById(color).classList.add("active");
     };
   }
