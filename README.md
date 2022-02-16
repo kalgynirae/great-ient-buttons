@@ -2,4 +2,6 @@
 
 Dark theme button styles for gradient-nostalgic folks.
 
-Demo and instructions: https://kalgynirae.github.io/great-ient-buttons/
+**Instructions and demo:** https://kalgynirae.github.io/great-ient-buttons/
+
+![Screenshot of the Product Card Sample from the demo page](screenshots/product-card-sample.png)

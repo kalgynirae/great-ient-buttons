@@ -20,15 +20,15 @@ class Color:
             LCHabColor(self.l, self.c, self.h), sRGBColor
         ).get_rgb_hex()
 
-    def set(self, l: float | None = None, c: float | None = None) -> Color:
+    def set(self, l: float | None = None, c: float | None = None, h: float | None = None) -> Color:
         return type(self)(
             l=self.l if l is None else max(l, 0),
             c=self.c if c is None else max(c, 0),
-            h=self.h,
+            h=self.h if h is None else h % 360,
         )
 
-    def adjust(self, l: float = 0, c: float = 0) -> Color:
-        return self.set(l=self.l + l, c=self.c + c)
+    def adjust(self, l: float = 0, c: float = 0, h: float = 0) -> Color:
+        return self.set(l=self.l + l, c=self.c + c, h=self.h + h)
 
 
 base_colors = dict(
@@ -60,9 +60,11 @@ for name, color in base_colors.items():
             --gb-text-shadow-color: {color.adjust(l=-30)};
             --gb-background-label: {color.adjust(l=-5, c=-10)};
             --gb-color-label: {color.adjust(l=-30)};
-            --gb-header-color: {color.adjust(l=40, c=-10)};
-            --gb-link-color: {color.adjust(l=15)};
-            --gb-link-color-hover: {color.adjust(l=20, c=5)};
+            --gb-text-color1: {color.adjust(l=40, c=-10)};
+            --gb-text-color2: {color.adjust(l=40, c=-10, h=90)};
+            --gb-text-color3: {color.adjust(l=40, c=-10, h=-90)};
+            --gb-link-color: {color.adjust(l=18)};
+            --gb-link-color-hover: {color.adjust(l=23, c=5)};
           }}
         """
     )
@@ -70,7 +72,7 @@ for name, color in base_colors.items():
 
 stylesheet = """\
 /* Great‼-ient Buttons v<VERSION> */
-/* https://github.com/kalgynirae/great-ient-buttons */
+/* See https://github.com/kalgynirae/great-ient-buttons for license information. */
 
 /* Selected resets from normalize.css (https://necolas.github.io/normalize.css/) */
 button {

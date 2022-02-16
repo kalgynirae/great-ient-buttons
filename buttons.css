@@ -1,5 +1,5 @@
 /* Great‼-ient Buttons v0.1.0 */
-/* https://github.com/kalgynirae/great-ient-buttons */
+/* See https://github.com/kalgynirae/great-ient-buttons for license information. */
 
 /* Selected resets from normalize.css (https://necolas.github.io/normalize.css/) */
 button {
@@ -136,9 +136,11 @@ a.gb-button {
   --gb-text-shadow-color: #360012;
   --gb-background-label: #6a3648;
   --gb-color-label: #360012;
-  --gb-header-color: #e5a8ba;
-  --gb-link-color: #ad5e78;
-  --gb-link-color-hover: #c26685;
+  --gb-text-color1: #e5a8ba;
+  --gb-text-color2: #c6b88a;
+  --gb-text-color3: #a4bae6;
+  --gb-link-color: #b56680;
+  --gb-link-color-hover: #ca6e8d;
 }
 
 .gb-orange {
@@ -155,9 +157,11 @@ a.gb-button {
   --gb-text-shadow-color: #320000;
   --gb-background-label: #653b2c;
   --gb-color-label: #320000;
-  --gb-header-color: #e0ac99;
-  --gb-link-color: #a6664e;
-  --gb-link-color-hover: #ba6f54;
+  --gb-text-color1: #e0ac99;
+  --gb-text-color2: #a0c297;
+  --gb-text-color3: #ceaeda;
+  --gb-link-color: #ae6d55;
+  --gb-link-color-hover: #c3775b;
 }
 
 .gb-yellow {
@@ -174,9 +178,11 @@ a.gb-button {
   --gb-text-shadow-color: #200f00;
   --gb-background-label: #50461e;
   --gb-color-label: #200f00;
-  --gb-header-color: #c6b88a;
-  --gb-link-color: #857639;
-  --gb-link-color-hover: #93823c;
+  --gb-text-color1: #c6b88a;
+  --gb-text-color2: #81c6b8;
+  --gb-text-color3: #e5a8ba;
+  --gb-link-color: #8d7d41;
+  --gb-link-color-hover: #9c8a43;
 }
 
 .gb-green {
@@ -193,9 +199,11 @@ a.gb-button {
   --gb-text-shadow-color: #001b00;
   --gb-background-label: #304e2a;
   --gb-color-label: #001b00;
-  --gb-header-color: #a0c297;
-  --gb-link-color: #55824b;
-  --gb-link-color-hover: #5b9050;
+  --gb-text-color1: #a0c297;
+  --gb-text-color2: #81c3d8;
+  --gb-text-color3: #e0ac99;
+  --gb-link-color: #5c8a52;
+  --gb-link-color-hover: #639857;
 }
 
 .gb-cyan {
@@ -212,9 +220,11 @@ a.gb-button {
   --gb-text-shadow-color: #001f0f;
   --gb-background-label: #005146;
   --gb-color-label: #001f0f;
-  --gb-header-color: #81c6b8;
-  --gb-link-color: #0a8776;
-  --gb-link-color-hover: #009682;
+  --gb-text-color1: #81c6b8;
+  --gb-text-color2: #a4bae6;
+  --gb-text-color3: #c6b88a;
+  --gb-link-color: #1c8f7d;
+  --gb-link-color-hover: #009e8a;
 }
 
 .gb-blue {
@@ -231,9 +241,11 @@ a.gb-button {
   --gb-text-shadow-color: #001d32;
   --gb-background-label: #004f62;
   --gb-color-label: #001d32;
-  --gb-header-color: #81c3d8;
-  --gb-link-color: #0084a0;
-  --gb-link-color-hover: #0092b4;
+  --gb-text-color1: #81c3d8;
+  --gb-text-color2: #ceaeda;
+  --gb-text-color3: #a0c297;
+  --gb-link-color: #008ca8;
+  --gb-link-color-hover: #009abc;
 }
 
 .gb-indigo {
@@ -250,9 +262,11 @@ a.gb-button {
   --gb-text-shadow-color: #001340;
   --gb-background-label: #31486e;
   --gb-color-label: #001340;
-  --gb-header-color: #a4bae6;
-  --gb-link-color: #5679b3;
-  --gb-link-color-hover: #5b86c9;
+  --gb-text-color1: #a4bae6;
+  --gb-text-color2: #e5a8ba;
+  --gb-text-color3: #81c6b8;
+  --gb-link-color: #5e80bb;
+  --gb-link-color-hover: #648ed1;
 }
 
 .gb-purple {
@@ -269,9 +283,11 @@ a.gb-button {
   --gb-text-shadow-color: #230032;
   --gb-background-label: #583d63;
   --gb-color-label: #230032;
-  --gb-header-color: #ceaeda;
-  --gb-link-color: #9168a2;
-  --gb-link-color-hover: #a272b5;
+  --gb-text-color1: #ceaeda;
+  --gb-text-color2: #e0ac99;
+  --gb-text-color3: #81c3d8;
+  --gb-link-color: #9970aa;
+  --gb-link-color-hover: #aa7abe;
 }
 
 .gb-gray {
@@ -288,7 +304,9 @@ a.gb-button {
   --gb-text-shadow-color: #111111;
   --gb-background-label: #474747;
   --gb-color-label: #111111;
-  --gb-header-color: #b9b9b9;
-  --gb-link-color: #777777;
-  --gb-link-color-hover: #8c8184;
+  --gb-text-color1: #b9b9b9;
+  --gb-text-color2: #b9b9b9;
+  --gb-text-color3: #b9b9b9;
+  --gb-link-color: #7f7f7f;
+  --gb-link-color-hover: #94888c;
 }
