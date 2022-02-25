@@ -33,9 +33,9 @@ class Color:
 
 base_colors = dict(
     red=Color(35, 35, 0),
-    orange=Color(35, 35, 45),
-    yellow=Color(35, 35, 90),
-    green=Color(35, 35, 135),
+    orange=Color(36, 35, 50),
+    yellow=Color(38, 36, 90),
+    green=Color(35, 35, 132),
     cyan=Color(35, 35, 180),
     blue=Color(35, 35, 225),
     indigo=Color(35, 35, 270),

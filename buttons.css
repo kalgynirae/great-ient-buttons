@@ -144,66 +144,66 @@ a.gb-button {
 }
 
 .gb-orange {
-  --gb-background: linear-gradient(to bottom, #7d412c 40%, #6c331f 100%);
-  --gb-background-hover: linear-gradient(to bottom, #8d5039 20%, #7d412c 100%);
-  --gb-background-active: linear-gradient(to bottom, #5c2513 20%, #672f1b 100%);
-  --gb-background-disabled: #583021;
+  --gb-background: linear-gradient(to bottom, #7d452b 40%, #6d371e 100%);
+  --gb-background-hover: linear-gradient(to bottom, #8d5438 20%, #7d452b 100%);
+  --gb-background-active: linear-gradient(to bottom, #5d2a11 20%, #673319 100%);
+  --gb-background-disabled: #593321;
   --gb-border-color: black;
   --gb-border-radius: 10px;
-  --gb-box-shadow-color: #85503d;
-  --gb-box-shadow-color-active: #813e26;
-  --gb-color: #d4d4d4;
-  --gb-color-disabled: #6a6a6a;
-  --gb-text-shadow-color: #320000;
-  --gb-background-label: #653b2c;
-  --gb-color-label: #320000;
-  --gb-text-color1: #e0ac99;
-  --gb-text-color2: #a0c297;
-  --gb-text-color3: #ceaeda;
-  --gb-link-color: #ae6d55;
-  --gb-link-color-hover: #c3775b;
+  --gb-box-shadow-color: #85543c;
+  --gb-box-shadow-color-active: #814324;
+  --gb-color: #d7d7d7;
+  --gb-color-disabled: #6d6d6d;
+  --gb-text-shadow-color: #330100;
+  --gb-background-label: #663f2c;
+  --gb-color-label: #330100;
+  --gb-text-color1: #e1b099;
+  --gb-text-color2: #9fc59d;
+  --gb-text-color3: #d4b0da;
+  --gb-link-color: #af7154;
+  --gb-link-color-hover: #c27c59;
 }
 
 .gb-yellow {
-  --gb-background: linear-gradient(to bottom, #5e5116 40%, #4f4406 100%);
-  --gb-background-hover: linear-gradient(to bottom, #6d6024 20%, #5e5116 100%);
-  --gb-background-active: linear-gradient(to bottom, #413600 20%, #4a3f02 100%);
-  --gb-background-disabled: #443b14;
+  --gb-background: linear-gradient(to bottom, #66581b 40%, #574a0b 100%);
+  --gb-background-hover: linear-gradient(to bottom, #756729 20%, #66581b 100%);
+  --gb-background-active: linear-gradient(to bottom, #483d00 20%, #524606 100%);
+  --gb-background-disabled: #4b4118;
   --gb-border-color: black;
   --gb-border-radius: 10px;
-  --gb-box-shadow-color: #6a5d2c;
-  --gb-box-shadow-color-active: #5f5108;
-  --gb-color: #d4d4d4;
-  --gb-color-disabled: #6a6a6a;
-  --gb-text-shadow-color: #200f00;
-  --gb-background-label: #50461e;
-  --gb-color-label: #200f00;
-  --gb-text-color1: #c6b88a;
-  --gb-text-color2: #81c6b8;
-  --gb-text-color3: #e5a8ba;
-  --gb-link-color: #8d7d41;
-  --gb-link-color-hover: #9c8a43;
+  --gb-box-shadow-color: #726531;
+  --gb-box-shadow-color-active: #67580e;
+  --gb-color: #dddddb;
+  --gb-color-disabled: #727270;
+  --gb-text-shadow-color: #251600;
+  --gb-background-label: #574d23;
+  --gb-color-label: #251600;
+  --gb-text-color1: #cec090;
+  --gb-text-color2: #87cfc0;
+  --gb-text-color3: #efafc2;
+  --gb-link-color: #958546;
+  --gb-link-color-hover: #a49248;
 }
 
 .gb-green {
-  --gb-background: linear-gradient(to bottom, #305c28 40%, #214e1b 100%);
-  --gb-background-hover: linear-gradient(to bottom, #3e6b36 20%, #305c28 100%);
-  --gb-background-active: linear-gradient(to bottom, #12400d 20%, #1c4916 100%);
-  --gb-background-disabled: #25421f;
+  --gb-background: linear-gradient(to bottom, #345c26 40%, #254d18 100%);
+  --gb-background-hover: linear-gradient(to bottom, #426b33 20%, #345c26 100%);
+  --gb-background-active: linear-gradient(to bottom, #163f0a 20%, #204914 100%);
+  --gb-background-disabled: #27421e;
   --gb-border-color: black;
   --gb-border-radius: 10px;
-  --gb-box-shadow-color: #42673a;
-  --gb-box-shadow-color-active: #295d21;
+  --gb-box-shadow-color: #456738;
+  --gb-box-shadow-color-active: #2d5d1e;
   --gb-color: #d4d4d4;
   --gb-color-disabled: #6a6a6a;
   --gb-text-shadow-color: #001b00;
-  --gb-background-label: #304e2a;
+  --gb-background-label: #324d28;
   --gb-color-label: #001b00;
-  --gb-text-color1: #a0c297;
-  --gb-text-color2: #81c3d8;
-  --gb-text-color3: #e0ac99;
-  --gb-link-color: #5c8a52;
-  --gb-link-color-hover: #639857;
+  --gb-text-color1: #a3c195;
+  --gb-text-color2: #80c4d7;
+  --gb-text-color3: #e1ac9b;
+  --gb-link-color: #608950;
+  --gb-link-color-hover: #679855;
 }
 
 .gb-cyan {
