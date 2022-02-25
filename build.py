@@ -7,7 +7,7 @@ from textwrap import dedent
 from colormath.color_conversions import convert_color
 from colormath.color_objects import ColorBase, LabColor, LCHabColor, sRGBColor
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 @dataclass(frozen=True)
 class Color:
